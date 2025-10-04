@@ -7,154 +7,7 @@
     <title>Landexafy - Solusi Bisnis Modern</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="/assets/logo no bg.png" type="png"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-        /* Kelas animasi gulir */
-        .scroll-animate {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease-out;
-        }
-
-        .scroll-animate.animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        nav {
-            position: relative;
-            z-index: 10;
-        }
-
-        .white-bone {
-            background-color: #f9faf8;
-        }
-
-        .pastel-pink {
-            background-color: #fcf7fb;
-        }
-
-        .pastel-green {
-            background-color: #f7fbf9;
-        }
-
-        .pastel-purple {
-            background-color: #f9f7fc;
-        }
-
-        .btn-primary {
-            background-color: #6c5ce7;
-            color: white;
-            transition: all 0.3s;
-        }
-
-        .btn-primary:hover {
-            background-color: #b5a693;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(180, 168, 151, 0.3);
-        }
-
-        .feature-card {
-            transition: all 0.3s;
-            border-radius: 16px;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
-        }
-
-        #testimonial-slider {
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        #testimonial-slider::-webkit-scrollbar {
-            display: none;
-        }
-
-        .cursor-grabbing {
-            cursor: grabbing;
-        }
-
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-slide {
-            animation: slide 20s linear infinite;
-            width: max-content;
-        }
-
-        .animate-slide:hover {
-            animation-play-state: paused;
-        }
-
-        .typing {
-            border-right: 2px solid #4a90e2;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(10, end), blink-caret 0.75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes blink-caret {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: #4a90e2;
-            }
-        }
-
-        @keyframes glow {
-            0% {
-                border-color: #064e3b;
-                box-shadow: 0 0 5px #064e3b, 0 0 10px #064e3b;
-            }
-
-            50% {
-                border-color: #10b981;
-                box-shadow: 0 0 10px #10b981, 0 0 20px #10b981;
-            }
-
-            100% {
-                border-color: #064e3b;
-                box-shadow: 0 0 5px #064e3b, 0 0 10px #064e3b;
-            }
-        }
-
-        .animate-glow {
-            background: linear-gradient(90deg, #064e3b, #10b981);
-            border: 2px solid #10b981;
-            animation: glow 1.5s infinite alternate;
-        }
-    </style>
+    <link rel="stylesheet" href="/ui/stylehome.css">
 </head>
 
 <body>
@@ -450,7 +303,7 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <a href="landing page.html"
+            <a href="/landingpg/landing page.html"
                 class="btn-primary mt-10 px-8 py-4 rounded-xl font-medium text-base shadow-md hover:shadow-lg transition-all text-center inline-block"
                 style="background-color: #064e3b; color: #fff;">
                 Contoh Landing Page
@@ -534,7 +387,7 @@
             </div>
         </div>
         <div class="flex justify-center">
-            <a href="website.html"
+            <a href="/website/website.html"
                 class="btn-primary mt-10 px-8 py-4 rounded-xl font-medium text-base shadow-md hover:shadow-lg transition-all text-center inline-block"
                 style="background-color: #064e3b; color: #fff;">
                 Contoh Website
