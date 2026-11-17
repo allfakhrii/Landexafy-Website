@@ -11,10 +11,10 @@ export const dictionaries = {
     nav_get_started: "Mulai Sekarang",
 
     // Hero
-    hero_badge: "Agensi Web Modern",
+    hero_badge: "Solusi Bisnis & Web Modern",
     hero_status: "Tersedia untuk Project Baru",
-    hero_title_prefix: "Tingkatkan Kehadiran Digital Anda bersama ",
-    hero_description: "Kami membangun website yang cepat, dapat diskalakan, dan memukau untuk bisnis maupun individu. Wujudkan visi Anda menjadi nyata dengan solusi digital premium kami.",
+    hero_title_prefix: "Transformasi Bisnis Anda bersama ",
+    hero_description: "Rampingkan operasional dan tingkatkan visibilitas bisnis Anda dengan solusi website inovatif, responsif, dan berperforma tinggi.",
     hero_btn_pricing: "Jelajahi Solusi",
     hero_btn_consult: "Konsultasi Gratis",
     hero_stat_speed: "Skor Kecepatan 99+",
@@ -202,7 +202,7 @@ export const dictionaries = {
     contact_stat_3: "Garansi Selesai Tepat Waktu",
 
     // Footer
-    foot_desc: "Kami membangun website yang cepat, dapat diskalakan, dan memukau yang membantu bisnis Anda menonjol di dunia digital.",
+    foot_desc: "Solusi inovatif dan pembuatan website modern untuk kebutuhan bisnis, UMKM, dan personal branding.",
     foot_services: "Layanan",
     foot_serv_1: "Company Profile",
     foot_serv_2: "SEO Optimizer",
@@ -214,7 +214,7 @@ export const dictionaries = {
     foot_comp_3: "Solusi & Layanan",
     foot_comp_4: "FAQ",
     foot_contact: "Kontak",
-    foot_rights: "Hak Cipta Dilindungi.",
+    foot_rights: "Semua hak dilindungi.",
     foot_privacy: "Kebijakan Privasi",
     foot_terms: "Syarat Ketentuan"
   },
@@ -230,10 +230,10 @@ export const dictionaries = {
     nav_get_started: "Get Started",
 
     // Hero
-    hero_badge: "Modern Web Development Agency",
+    hero_badge: "Modern Business & Web Solutions",
     hero_status: "Available for New Projects",
-    hero_title_prefix: "Elevate Your Digital Presence with ",
-    hero_description: "We build fast, scalable, and stunning websites for businesses and individuals. Turn your vision into reality with our premium digital solutions.",
+    hero_title_prefix: "Transform Your Business with ",
+    hero_description: "Streamline your operations and amplify your online reach with modern, high-performance websites tailored to your business needs.",
     hero_btn_pricing: "Explore Solutions",
     hero_btn_consult: "Free Consultation",
     hero_stat_speed: "99+ PageSpeed Score",
@@ -324,7 +324,7 @@ export const dictionaries = {
     price_badge: "IT & Web Solutions",
     price_title: "Tailored IT Solutions &",
     price_title_highlight: "Web Development",
-    price_subtitle: "We go beyond conventional web development—partnering as your IT Solution provider focused on building modern, efficient systems to scale your business.",
+    price_subtitle: "We go beyond conventional web development, partnering as your IT Solution provider focused on building modern, efficient systems to scale your business.",
     price_btn: "Consult Solution",
     price_popular_tag: "Most Popular",
     price_custom_note: "Need a custom web application or specific system integration not listed above?",
@@ -421,7 +421,7 @@ export const dictionaries = {
     contact_stat_3: "Guaranteed On-Time Delivery",
 
     // Footer
-    foot_desc: "We build fast, scalable, and stunning websites that help your business stand out in the digital world.",
+    foot_desc: "Innovative digital solutions and modern web development for growing businesses, startups, and brands.",
     foot_services: "Services",
     foot_serv_1: "Company Profile",
     foot_serv_2: "SEO Optimizer",

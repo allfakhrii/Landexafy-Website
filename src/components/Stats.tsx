@@ -43,28 +43,28 @@ function Counter({ from, to, suffix = "" }: { from: number; to: number; suffix?:
 }
 
 export default function Stats() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const { theme } = useTheme();
   const isDark = theme === "dark";
 
   const statsData = [
     {
       icon: <Briefcase className="w-6 h-6" />,
-      value: 120,
+      value: 20,
       suffix: "+",
-      label: t("stat_projects"),
+      label: language === "id" ? "Projek Selesai" : "Completed Projects",
     },
     {
       icon: <Users className="w-6 h-6" />,
-      value: 85,
-      suffix: "+",
-      label: t("stat_clients"),
+      value: 98,
+      suffix: "%",
+      label: language === "id" ? "Kecepatan & Kepuasan" : "Delivery & Satisfaction",
     },
     {
       icon: <Star className="w-6 h-6" />,
-      value: 3,
-      suffix: "",
-      label: t("stat_experience"),
+      value: 2,
+      suffix: "+",
+      label: language === "id" ? "Tahun Pengalaman" : "Years Experience",
     },
   ];
 

@@ -10,10 +10,10 @@ export default function ContactCTA() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
 
-  const waUrl = `https://wa.me/6285700654110?text=${encodeURIComponent(
+  const waUrl = `https://wa.me/6283182368320?text=${encodeURIComponent(
     language === "id"
-      ? "Halo MeoM, saya ingin konsultasi mengenai pembuatan website untuk bisnis saya."
-      : "Hello MeoM, I would like to consult about website development for my business."
+      ? "Halo Landexafy, saya ingin konsultasi mengenai pembuatan website untuk bisnis saya."
+      : "Hello Landexafy, I would like to consult about website development for my business."
   )}`;
 
   return (
@@ -69,7 +69,7 @@ export default function ContactCTA() {
               </a>
 
               <a
-                href="mailto:hello@meom.id"
+                href="mailto:landexafy@gmail.com"
                 className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-full border border-white/15 hover:border-[#C6F432]/40 transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md active:scale-[0.98]"
               >
                 <Mail className="w-5 h-5 text-[#C6F432]" />

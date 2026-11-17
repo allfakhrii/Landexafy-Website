@@ -259,10 +259,10 @@ export default function Process() {
                   : "Discuss your website vision directly with our developers and get an accurate timeline estimate today."}
               </p>
               <a
-                href={`https://wa.me/6285700654110?text=${encodeURIComponent(
+                href={`https://wa.me/6283182368320?text=${encodeURIComponent(
                   language === "id"
-                    ? "Halo MeoM, saya ingin konsultasi mengenai alur pengerjaan website."
-                    : "Hello MeoM, I would like to consult about the website development process."
+                    ? "Halo Landexafy, saya ingin konsultasi mengenai alur pengerjaan website."
+                    : "Hello Landexafy, I would like to consult about the website development process."
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

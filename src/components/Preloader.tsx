@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import meomLogo from "@/assets/meom-logo.png";
+import landexafyLogo from "@/assets/landexafy-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -49,11 +49,11 @@ export default function Preloader() {
               className="w-11 h-11 relative"
             >
               <Image
-                src={meomLogo}
-                alt="MeoM Logo"
-                width={44}
-                height={44}
-                className="w-full h-full object-contain rounded-xl shadow-sm"
+                src={landexafyLogo}
+                alt="Landexafy Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
                 priority
               />
             </motion.div>
@@ -65,8 +65,8 @@ export default function Preloader() {
               transition={{ duration: 0.35, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="text-2xl font-black tracking-tight flex items-center"
             >
-              <span className={isDark ? "text-white" : "text-slate-900"}>Me</span>
-              <span className={isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}>oM</span>
+              <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
+              <span className={isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}>exafy</span>
               <span className="text-[#C6F432]">.</span>
             </motion.div>
 

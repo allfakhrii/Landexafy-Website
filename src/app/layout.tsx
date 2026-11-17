@@ -8,16 +8,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "MeoM | Elevate Your Digital Presence",
-  description: "We build fast, scalable, and stunning websites for businesses and individuals.",
+  title: "Landexafy | Solusi Bisnis & Website Modern",
+  description: "Landexafy membangun website cepat, responsif, dan elegan untuk transformasi bisnis modern dan personal branding.",
   icons: {
     icon: [
-      { url: "/meom-logo.png?v=10", type: "image/png" },
-      { url: "/favicon.ico?v=10", sizes: "any" },
-      { url: "/favicon.png?v=10", type: "image/png" },
+      { url: "/landexafy-logo.png?v=1", type: "image/png" },
+      { url: "/logo.png?v=1", type: "image/png" },
+      { url: "/favicon.ico?v=1", sizes: "any" },
     ],
-    shortcut: "/meom-logo.png?v=10",
-    apple: "/apple-touch-icon.png?v=10",
+    shortcut: "/landexafy-logo.png?v=1",
+    apple: "/landexafy-logo.png?v=1",
   },
 };
 
@@ -31,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="id" data-theme="light" className={`${inter.variable} scroll-smooth light`} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/meom-logo.png?v=10" type="image/png" />
-        <link rel="shortcut icon" href="/meom-logo.png?v=10" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=10" />
+        <link rel="icon" href="/landexafy-logo.png?v=1" type="image/png" />
+        <link rel="shortcut icon" href="/landexafy-logo.png?v=1" />
+        <link rel="apple-touch-icon" href="/landexafy-logo.png?v=1" />
       </head>
       <body className="min-h-screen font-sans antialiased overflow-x-clip selection:bg-[#C6F432] selection:text-[#0B0B0C]" suppressHydrationWarning>
         <LanguageWrapper>{children}</LanguageWrapper>

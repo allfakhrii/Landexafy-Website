@@ -31,10 +31,10 @@ export default function FloatingActions() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const waUrl = `https://wa.me/6285700654110?text=${encodeURIComponent(
+  const waUrl = `https://wa.me/6283182368320?text=${encodeURIComponent(
     language === "id"
-      ? "Halo MeoM, saya ingin bertanya dan konsultasi mengenai pembuatan website."
-      : "Hello MeoM, I would like to inquire and consult about website development."
+      ? "Halo Landexafy, saya ingin bertanya dan konsultasi mengenai pembuatan website."
+      : "Hello Landexafy, I would like to inquire and consult about website development."
   )}`;
 
   return (

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight, ArrowRight, Globe, Sun, Moon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import meomLogo from "@/assets/meom-logo.png";
+import landexafyLogo from "@/assets/landexafy-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -75,17 +75,17 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <Image
-                src={meomLogo}
-                alt="MeoM Logo"
-                width={32}
-                height={32}
+                src={landexafyLogo}
+                alt="Landexafy Logo"
+                width={36}
+                height={36}
                 priority
-                className="w-8 h-8 object-contain shrink-0 rounded-lg shadow-sm"
+                className="w-8 h-8 object-contain shrink-0"
               />
               <div className="text-xl md:text-2xl font-black tracking-tight whitespace-nowrap flex items-center">
-                <span className={isDark ? "text-white" : "text-slate-900"}>Me</span>
+                <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
                 <span className={`${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"} font-black`}>
-                  oM
+                  exafy
                 </span>
                 <span className="text-[#C6F432] font-black">.</span>
               </div>
@@ -193,19 +193,19 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Image
-                  src={meomLogo}
-                  alt="MeoM Logo"
-                  width={32}
-                  height={32}
+                  src={landexafyLogo}
+                  alt="Landexafy Logo"
+                  width={36}
+                  height={36}
                   priority
-                  className="w-8 h-8 object-contain shrink-0 rounded-lg shadow-sm"
+                  className="w-8 h-8 object-contain shrink-0"
                 />
                 <div className={`text-xl font-black tracking-tight flex items-center ${
                   isDark ? "text-white" : "text-slate-900"
                 }`}>
-                  <span>Me</span>
+                  <span>Land</span>
                   <span className={`${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"} font-black`}>
-                    oM
+                    exafy
                   </span>
                   <span className="text-[#C6F432] font-black">.</span>
                 </div>

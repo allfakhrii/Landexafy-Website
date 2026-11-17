@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import meomLogo from "@/assets/meom-logo.png";
+import landexafyLogo from "@/assets/landexafy-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -21,11 +21,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <Image src={meomLogo} alt="MeoM Logo" width={32} height={32} className="w-8 h-8 object-contain rounded-lg shadow-sm" />
+              <Image src={landexafyLogo} alt="Landexafy Logo" width={32} height={32} className="w-8 h-8 object-contain" />
               <div className="text-2xl font-black tracking-tighter flex items-center">
-                <span className={isDark ? "text-white" : "text-slate-900"}>Me</span>
+                <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
                 <span className={`${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"} font-black`}>
-                  oM
+                  exafy
                 </span>
                 <span className="text-[#C6F432] font-black">.</span>
               </div>
@@ -33,6 +33,24 @@ export default function Footer() {
             <p className={`text-sm leading-relaxed mb-6 ${isDark ? "text-gray-400" : "text-slate-600"}`}>
               {t("foot_desc")}
             </p>
+            <div className="flex items-center gap-4 text-xs font-semibold">
+              <a
+                href="https://instagram.com/Landexafy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`transition-colors ${isDark ? "text-gray-400 hover:text-[#C6F432]" : "text-slate-600 hover:text-black"}`}
+              >
+                Instagram: @Landexafy
+              </a>
+              <a
+                href="https://x.com/Landexafy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`transition-colors ${isDark ? "text-gray-400 hover:text-[#C6F432]" : "text-slate-600 hover:text-black"}`}
+              >
+                X: @Landexafy
+              </a>
+            </div>
           </div>
 
           {/* Links */}
@@ -59,8 +77,8 @@ export default function Footer() {
           <div>
             <h4 className={`font-semibold mb-4 ${isDark ? "text-white" : "text-slate-900"}`}>{t("foot_contact")}</h4>
             <ul className={`space-y-3 text-sm ${isDark ? "text-gray-400" : "text-slate-600"}`}>
-              <li><a href="mailto:hello@meom.id" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>hello@meom.id</a></li>
-              <li><a href="https://wa.me/6285700654110" target="_blank" rel="noopener noreferrer" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>085700654110</a></li>
+              <li><a href="mailto:landexafy@gmail.com" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>landexafy@gmail.com</a></li>
+              <li><a href="https://wa.me/6283182368320" target="_blank" rel="noopener noreferrer" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>+62 831-8236-8320</a></li>
               <li>{language === "id" ? "Purbalingga, Jawa Tengah, Indonesia" : "Purbalingga, Central Java, Indonesia"}</li>
             </ul>
           </div>
@@ -70,7 +88,7 @@ export default function Footer() {
           isDark ? "border-white/10" : "border-slate-200"
         }`}>
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} MeoM. {t("foot_rights")}
+            &copy; {currentYear} LANDEXAFY. {t("foot_rights")}
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
             <Link href="#" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_privacy")}</Link>

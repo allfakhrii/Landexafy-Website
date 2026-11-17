@@ -30,8 +30,8 @@ export default function Pricing() {
       ],
       waMessage: encodeURIComponent(
         language === "id"
-          ? "Halo MeoM, saya ingin konsultasi mengenai pembuatan website Company Profile untuk bisnis saya."
-          : "Hello MeoM, I would like to consult about building a Company Profile website for my business."
+          ? "Halo Landexafy, saya ingin konsultasi mengenai pembuatan website Company Profile untuk bisnis saya."
+          : "Hello Landexafy, I would like to consult about building a Company Profile website for my business."
       ),
     },
     {
@@ -47,8 +47,8 @@ export default function Pricing() {
       ],
       waMessage: encodeURIComponent(
         language === "id"
-          ? "Halo MeoM, saya ingin konsultasi mengenai layanan SEO Optimizer & optimasi peringkat website."
-          : "Hello MeoM, I would like to consult about SEO Optimizer services and ranking boosts."
+          ? "Halo Landexafy, saya ingin konsultasi mengenai layanan SEO Optimizer & optimasi peringkat website."
+          : "Hello Landexafy, I would like to consult about SEO Optimizer services and ranking boosts."
       ),
     },
     {
@@ -64,8 +64,8 @@ export default function Pricing() {
       ],
       waMessage: encodeURIComponent(
         language === "id"
-          ? "Halo MeoM, saya ingin konsultasi mengenai pembuatan POS System (Point of Sale) berbasis web."
-          : "Hello MeoM, I would like to consult about developing a modern Web POS (Point of Sale) system."
+          ? "Halo Landexafy, saya ingin konsultasi mengenai pembuatan POS System (Point of Sale) berbasis web."
+          : "Hello Landexafy, I would like to consult about developing a modern Web POS (Point of Sale) system."
       ),
     },
     {
@@ -81,16 +81,16 @@ export default function Pricing() {
       ],
       waMessage: encodeURIComponent(
         language === "id"
-          ? "Halo MeoM, saya ingin konsultasi mengenai pembuatan Dashboard Website & sistem internal."
-          : "Hello MeoM, I would like to consult about building a Web Dashboard & internal analytics tool."
+          ? "Halo Landexafy, saya ingin konsultasi mengenai pembuatan Dashboard Website & sistem internal."
+          : "Hello Landexafy, I would like to consult about building a Web Dashboard & internal analytics tool."
       ),
     },
   ];
 
   const customWaMessage = encodeURIComponent(
     language === "id"
-      ? "Halo MeoM, saya memiliki kebutuhan kustom IT Solution & Web Development untuk bisnis saya."
-      : "Hello MeoM, I have a custom IT Solution & Web Development requirement for my business."
+      ? "Halo Landexafy, saya memiliki kebutuhan kustom IT Solution & Web Development untuk bisnis saya."
+      : "Hello Landexafy, I have a custom IT Solution & Web Development requirement for my business."
   );
 
   return (
@@ -206,7 +206,7 @@ export default function Pricing() {
 
                   {/* Consultation CTA Button */}
                   <a
-                    href={`https://wa.me/6285700654110?text=${solution.waMessage}`}
+                    href={`https://wa.me/6283182368320?text=${solution.waMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3.5 mt-auto rounded-xl font-extrabold text-xs md:text-sm text-center transition-all duration-200 flex items-center justify-center gap-2 bg-[#C6F432] hover:bg-[#b5e028] text-[#0B0B0C] shadow-[0_0_20px_rgba(198,244,50,0.3)] active:scale-[0.98]"
@@ -251,7 +251,7 @@ export default function Pricing() {
           </div>
 
           <a
-            href={`https://wa.me/6285700654110?text=${customWaMessage}`}
+            href={`https://wa.me/6283182368320?text=${customWaMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 px-6 py-3.5 rounded-full bg-[#C6F432] text-[#0B0B0C] hover:bg-[#b5e028] font-extrabold text-xs md:text-sm transition-all duration-200 flex items-center gap-2 shadow-[0_0_20px_rgba(198,244,50,0.3)] active:scale-95"

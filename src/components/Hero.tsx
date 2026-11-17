@@ -190,7 +190,7 @@ export default function Hero() {
         >
           {t("hero_title_prefix")}
           <span className={`italic font-serif ml-2.5 ${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}`}>
-            MeoM
+            Landexafy
           </span>
         </motion.h1>
 
@@ -202,24 +202,24 @@ export default function Hero() {
           className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-6 md:mb-8 text-xs sm:text-sm transform-gpu"
         >
           <span className={`font-medium ${isDark ? "text-gray-300" : "text-slate-600"}`}>
-            {language === "id" ? "Spesialis Solusi:" : "Core Expertise:"}
+            {language === "id" ? "Fokus Solusi:" : "Core Expertise:"}
           </span>
           <RotatingText
             texts={
               language === "id"
                 ? [
-                    "Website Super Cepat & Ringan",
-                    "Desain Standar Awwwards UI/UX",
-                    "100% Core Web Vitals & SEO",
-                    "Web App & SaaS Skalabilitas Tinggi",
-                    "Dashboard & Point of Sale Modern",
+                    "Website Modern & Cepat",
+                    "Landing Page Berkonversi Tinggi",
+                    "Desain Responsif & UI/UX Interaktif",
+                    "Company Profile & UMKM",
+                    "Web App & Sistem Dashboard",
                   ]
                 : [
-                    "Ultra-Fast & Lightweight Web",
-                    "Awwwards-Grade UI/UX Design",
-                    "100% Core Web Vitals & SEO",
-                    "High-Scale Web Apps & SaaS",
-                    "Next-Gen Dashboard & POS",
+                    "Modern & Blazing Fast Web",
+                    "High-Converting Landing Pages",
+                    "Responsive & Interactive UI/UX",
+                    "Company Profile & SME Solutions",
+                    "Web Apps & Dashboard Systems",
                   ]
             }
             mainClassName={`px-3.5 py-1 font-semibold text-xs sm:text-sm rounded-full ${
