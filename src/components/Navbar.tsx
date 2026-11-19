@@ -69,7 +69,10 @@ export default function Navbar() {
             <Link
               href="/"
               className="flex items-center shrink-0 group select-none py-0.5"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               <div className="text-xl md:text-2xl font-black tracking-tight whitespace-nowrap flex items-center">
                 <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>

@@ -10,10 +10,17 @@ export default function Preloader() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
 
-  // Prevent scrolling while loading
+  // Prevent scrolling while loading & ensure page starts at the top
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
+      }
+    }
+
     if (isLoading) {
       document.body.style.overflow = "hidden";
+      window.scrollTo(0, 0);
     } else {
       document.body.style.overflow = "";
     }

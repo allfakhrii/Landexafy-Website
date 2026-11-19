@@ -116,6 +116,7 @@ export default function Hero() {
 
   return (
     <section
+      id="hero"
       ref={heroRef}
       className={`relative min-h-[100dvh] flex flex-col items-center justify-center pt-28 pb-16 lg:pt-0 lg:pb-0 overflow-hidden isolate transition-colors duration-300 ${
         isDark ? "bg-[#0B0B0C]" : "bg-[#F8FAFC]"
