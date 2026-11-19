@@ -11,7 +11,7 @@ const reviews = [
     role: "Client",
     company: "Landexafy Partner",
     avatar: "LH",
-    color: "from-[#1a1a1c] to-[#0B0B0C] border border-[#15803d]/50 text-[#16a34a]",
+    color: "from-[#1a1a1c] to-[#0B0B0C] border border-[#C6F432]/40 text-[#C6F432]",
     rating: 5,
     text: {
       id: "Pelayanan sangat memuaskan! Proses cepat dan hasilnya sesuai harapan.",
@@ -23,7 +23,7 @@ const reviews = [
     role: "Client",
     company: "Business Owner",
     avatar: "RM",
-    color: "from-emerald-600 to-teal-700",
+    color: "from-emerald-500 to-teal-600",
     rating: 5,
     text: {
       id: "Sangat direkomendasikan, komunikasi mudah dan profesional sepanjang proses pengerjaan.",
@@ -35,7 +35,7 @@ const reviews = [
     role: "Client",
     company: "UMKM Partner",
     avatar: "KN",
-    color: "from-green-600 to-emerald-800",
+    color: "from-lime-400 to-emerald-600",
     rating: 5,
     text: {
       id: "Kualitas layanan luar biasa, pengerjaan rapi dan hasilnya melebihi ekspektasi saya.",
@@ -47,7 +47,7 @@ const reviews = [
     role: "Client",
     company: "Creative Entrepreneur",
     avatar: "PR",
-    color: "from-teal-600 to-emerald-800",
+    color: "from-teal-500 to-emerald-700",
     rating: 5,
     text: {
       id: "Proses pengerjaan cepat, hasil rapi, dan kualitasnya benar-benar mengesankan.",
@@ -59,7 +59,7 @@ const reviews = [
     role: "Client",
     company: "Retail & Culinary",
     avatar: "BS",
-    color: "from-[#1a1a1c] to-[#0B0B0C] border border-[#15803d]/50 text-[#16a34a]",
+    color: "from-[#1a1a1c] to-[#0B0B0C] border border-[#C6F432]/40 text-[#C6F432]",
     rating: 5,
     text: {
       id: "Harga bersaing dan kualitas terbaik yang pernah saya dapatkan untuk pembuatan website.",
@@ -71,7 +71,7 @@ const reviews = [
     role: "Client",
     company: "Services & Trade",
     avatar: "RH",
-    color: "from-green-600 to-teal-700",
+    color: "from-lime-500 to-teal-600",
     rating: 5,
     text: {
       id: "Pelayanan sigap, pengerjaan detail, dan hasil akhir sangat memuaskan.",
@@ -98,8 +98,8 @@ export default function Testimonials() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 ${
               isDark
-                ? "bg-[#121214] border border-[#15803d]/40 text-[#16a34a] shadow-[0_0_15px_rgba(21,128,61,0.15)]"
-                : "bg-green-50 border border-green-300 text-green-800"
+                ? "bg-[#121214] border border-[#C6F432]/30 text-[#C6F432] shadow-[0_0_15px_rgba(198,244,50,0.1)]"
+                : "bg-lime-50 border border-lime-300 text-lime-800"
             }`}
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -116,7 +116,7 @@ export default function Testimonials() {
             }`}
           >
             {t("testi_title")}{" "}
-            <span className={`italic font-serif ${isDark ? "text-[#16a34a]" : "text-[#15803d]"}`}>
+            <span className={`italic font-serif ${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}`}>
               {t("testi_title_highlight")}
             </span>
           </motion.h2>
@@ -146,8 +146,8 @@ export default function Testimonials() {
               transition={{ duration: 0.5, delay: idx * 0.08, ease: [0.22, 1, 0.36, 1] }}
               className={`p-8 rounded-3xl transition-all duration-300 flex flex-col justify-between transform-gpu relative group ${
                 isDark
-                  ? "bg-[#121214] border border-white/10 shadow-xs hover:border-[#15803d]/50 hover:shadow-[0_0_30px_rgba(21,128,61,0.15)]"
-                  : "bg-white border border-slate-200/90 shadow-sm hover:border-green-600 hover:shadow-xl"
+                  ? "bg-[#121214] border border-white/10 shadow-xs hover:border-[#C6F432]/40 hover:shadow-[0_0_30px_rgba(198,244,50,0.12)]"
+                  : "bg-white border border-slate-200/90 shadow-sm hover:border-lime-400 hover:shadow-xl"
               }`}
             >
               <div>
@@ -155,11 +155,11 @@ export default function Testimonials() {
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-1">
                     {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#15803d] text-[#15803d]" />
+                      <Star key={i} className="w-4 h-4 fill-[#C6F432] text-[#C6F432]" />
                     ))}
                   </div>
                   <Quote className={`w-6 h-6 transition-colors ${
-                    isDark ? "text-white/20 group-hover:text-[#16a34a]" : "text-slate-300 group-hover:text-green-700"
+                    isDark ? "text-white/20 group-hover:text-[#C6F432]" : "text-slate-300 group-hover:text-lime-600"
                   }`} />
                 </div>
 
@@ -183,7 +183,7 @@ export default function Testimonials() {
                 <div>
                   <div className="flex items-center gap-1">
                     <h4 className={`font-bold text-sm ${isDark ? "text-white" : "text-slate-900"}`}>{review.name}</h4>
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#16a34a]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C6F432]" />
                   </div>
                   <p className={`text-xs font-medium ${isDark ? "text-gray-400" : "text-slate-500"}`}>
                     {review.role}, <span className={isDark ? "text-gray-200" : "text-slate-700"}>{review.company}</span>

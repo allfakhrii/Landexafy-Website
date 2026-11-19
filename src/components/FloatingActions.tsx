@@ -51,7 +51,7 @@ export default function FloatingActions() {
             aria-label={language === "id" ? "Kembali ke atas" : "Scroll to top"}
             className={`pointer-events-auto w-11 h-11 rounded-full shadow-lg flex items-center justify-center transition-all duration-200 active:scale-95 cursor-pointer border ${
               isDark
-                ? "bg-[#161618] text-white hover:text-[#16a34a] border-white/15 hover:border-[#15803d]/50"
+                ? "bg-[#161618] text-white hover:text-[#C6F432] border-white/15 hover:border-[#C6F432]/50"
                 : "bg-white text-slate-700 hover:text-black border-slate-200 hover:border-slate-400"
             }`}
           >
@@ -78,11 +78,11 @@ export default function FloatingActions() {
         </span>
 
         {/* Pulsing ring */}
-        <span className="absolute -inset-1 rounded-full bg-[#15803d] opacity-35 group-hover:opacity-65 animate-ping pointer-events-none" />
+        <span className="absolute -inset-1 rounded-full bg-[#C6F432] opacity-35 group-hover:opacity-65 animate-ping pointer-events-none" />
 
         {/* Button */}
-        <div className="relative w-13 h-13 rounded-full bg-[#15803d] hover:bg-[#166534] text-white shadow-[0_0_25px_rgba(21,128,61,0.45)] flex items-center justify-center transition-transform duration-200 group-hover:scale-105 active:scale-95">
-          <MessageCircle className="w-7 h-7 text-white stroke-[2.2]" />
+        <div className="relative w-13 h-13 rounded-full bg-[#C6F432] hover:bg-[#b5e028] text-[#0B0B0C] shadow-[0_0_25px_rgba(198,244,50,0.4)] flex items-center justify-center transition-transform duration-200 group-hover:scale-105 active:scale-95">
+          <MessageCircle className="w-7 h-7 text-[#0B0B0C] stroke-[2.2]" />
         </div>
       </a>
     </div>

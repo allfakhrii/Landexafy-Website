@@ -144,8 +144,8 @@ export default function Portfolio() {
         }}
         className={`w-[250px] sm:w-[270px] h-[156px] sm:h-[168px] rounded-2xl overflow-hidden flex-shrink-0 relative select-none cursor-grab active:cursor-grabbing transition-colors ${
           isDark
-            ? "bg-[#121214] border border-white/10 hover:border-[#15803d]/50 shadow-lg"
-            : "bg-white border border-slate-200 hover:border-green-600 shadow-md"
+            ? "bg-[#121214] border border-white/10 hover:border-[#C6F432]/50 shadow-lg"
+            : "bg-white border border-slate-200 hover:border-lime-400 shadow-md"
         }`}
       >
         <img
@@ -166,7 +166,7 @@ export default function Portfolio() {
       id: "portfolio",
       name: t("port_filter_landing") || "Landing Page",
       label: t("port_filter_landing") || "Landing Page",
-      color: "#15803d", // Dark Forest Green accent
+      color: "#C6F432", // Lime accent
       icon: Briefcase,
       badge: "Landing Page & Web",
       items: [
@@ -211,7 +211,7 @@ export default function Portfolio() {
       id: "company",
       name: t("port_folder_tab_company"), // "Company Profil"
       label: t("port_folder_tab_company"),
-      color: "#15803d", // Dark Forest Green accent
+      color: "#C6F432", // Lime accent
       icon: Building2,
       badge: "Corporate & Business",
       items: [
@@ -249,7 +249,7 @@ export default function Portfolio() {
       id: "event",
       name: language === "id" ? "Event & Branding" : "Event & Branding",
       label: language === "id" ? "Event & Branding" : "Event & Branding",
-      color: "#15803d", // Dark Forest Green accent
+      color: "#C6F432", // Lime accent
       icon: CalendarCheck,
       badge: "Summit & Personal",
       items: [
@@ -280,7 +280,7 @@ export default function Portfolio() {
       id: "webapp",
       name: t("port_folder_tab_webapp"), // "Web Apps & SaaS"
       label: t("port_folder_tab_webapp"),
-      color: "#15803d", // Dark Forest Green accent
+      color: "#C6F432", // Lime accent
       icon: LayoutDashboard,
       badge: "Dashboard & SaaS",
       items: [
@@ -337,8 +337,8 @@ export default function Portfolio() {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 ${
               isDark
-                ? "bg-[#121214] border border-[#15803d]/40 text-[#16a34a] shadow-[0_0_15px_rgba(21,128,61,0.15)]"
-                : "bg-green-50 border border-green-300 text-green-800"
+                ? "bg-[#121214] border border-[#C6F432]/30 text-[#C6F432] shadow-[0_0_15px_rgba(198,244,50,0.1)]"
+                : "bg-lime-50 border border-lime-300 text-lime-800"
             }`}
           >
             <Sparkles className="w-3.5 h-3.5" />
@@ -357,7 +357,7 @@ export default function Portfolio() {
             }`}
           >
             {t("port_title")}{" "}
-            <span className={`italic font-serif ${isDark ? "text-[#16a34a]" : "text-[#15803d]"}`}>
+            <span className={`italic font-serif ${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}`}>
               {t("port_title_highlight")}
             </span>
           </motion.h2>
@@ -451,7 +451,7 @@ export default function Portfolio() {
                         isDark ? "bg-[#161618] border-white/15" : "bg-slate-50 border-slate-300"
                       }`}>
                         <div className={`w-7 h-7 rounded-lg flex items-center justify-center mb-1 ${
-                          isDark ? "bg-white/5 text-[#16a34a]" : "bg-green-50 text-green-700"
+                          isDark ? "bg-white/5 text-[#C6F432]" : "bg-lime-50 text-lime-700"
                         }`}>
                           <Sparkles className="w-3.5 h-3.5" />
                         </div>
@@ -492,12 +492,12 @@ export default function Portfolio() {
                         </span>
                         <div className="flex items-center justify-between">
                           <span className={`text-[9px] font-semibold uppercase tracking-wider truncate ${
-                            isDark ? "text-[#16a34a]" : "text-green-700"
+                            isDark ? "text-[#C6F432]" : "text-lime-700"
                           }`}>
                             {item.tag}
                           </span>
                           {item.url && (
-                            <span className="text-[8px] font-extrabold text-white bg-[#15803d] px-1.5 py-0.5 rounded font-mono">
+                            <span className="text-[8px] font-extrabold text-[#0B0B0C] bg-[#C6F432] px-1.5 py-0.5 rounded font-mono">
                               Live
                             </span>
                           )}
@@ -521,18 +521,18 @@ export default function Portfolio() {
                   }}
                   className={`flex flex-col items-center rounded-3xl p-4 sm:p-5 transition-all duration-300 relative group w-full border ${
                     isOpen
-                      ? "z-40 ring-2 ring-[#15803d] shadow-2xl scale-[1.01]"
+                      ? "z-40 ring-2 ring-[#C6F432]/70 shadow-2xl scale-[1.01]"
                       : openFolderId !== null
                       ? "z-10 opacity-60 hover:opacity-90 hover:z-20"
                       : "z-10 hover:z-20"
                   } ${
                     isDark
                       ? isOpen
-                        ? "bg-[#161618] border-[#15803d] shadow-[0_0_35px_rgba(21,128,61,0.25)]"
-                        : "bg-[#121214] border-white/10 hover:border-[#15803d]/50 hover:shadow-[0_0_30px_rgba(21,128,61,0.15)]"
+                        ? "bg-[#161618] border-[#C6F432]/60 shadow-[0_0_35px_rgba(198,244,50,0.18)]"
+                        : "bg-[#121214] border-white/10 hover:border-[#C6F432]/40 hover:shadow-[0_0_30px_rgba(198,244,50,0.1)]"
                       : isOpen
-                      ? "bg-white border-green-600 shadow-xl"
-                      : "bg-[#F8FAFC] border-slate-200/90 shadow-sm hover:border-green-600 hover:shadow-md"
+                      ? "bg-white border-lime-400 shadow-xl"
+                      : "bg-[#F8FAFC] border-slate-200/90 shadow-sm hover:border-lime-400 hover:shadow-md"
                   }`}
                 >
                   {/* Folder Card Header */}
@@ -542,7 +542,7 @@ export default function Portfolio() {
                   >
                     <div className="flex items-center gap-2 min-w-0">
                       <div
-                        className="w-7 h-7 rounded-lg flex items-center justify-center text-white bg-[#15803d] shadow-xs shrink-0 font-bold"
+                        className="w-7 h-7 rounded-lg flex items-center justify-center text-[#0B0B0C] bg-[#C6F432] shadow-xs shrink-0 font-bold"
                       >
                         <IconComponent className="w-4 h-4 stroke-[2.5]" />
                       </div>
@@ -555,8 +555,8 @@ export default function Portfolio() {
 
                     <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 border ${
                       isDark
-                        ? "bg-white/5 border-white/10 text-[#16a34a]"
-                        : "bg-white border-slate-200 text-green-800 shadow-2xs"
+                        ? "bg-white/5 border-white/10 text-[#C6F432]"
+                        : "bg-white border-slate-200 text-lime-800 shadow-2xs"
                     }`}>
                       {folder.items.length} Web
                     </span>

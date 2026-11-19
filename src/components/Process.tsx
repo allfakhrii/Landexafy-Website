@@ -34,8 +34,8 @@ export default function Process() {
           ? "Roadmap Proyek & Spesifikasi Teknis"
           : "Project Roadmap & Tech Specs",
       points: [t("proc_1_p1"), t("proc_1_p2"), t("proc_1_p3")],
-      gradient: "from-[#15803d]/15 to-transparent",
-      accentBg: "bg-[#15803d]",
+      gradient: "from-[#C6F432]/10 to-transparent",
+      accentBg: "bg-[#C6F432]",
     },
     {
       step: "02",
@@ -47,8 +47,8 @@ export default function Process() {
           ? "Desain Figma High-Fidelity & Prototipe"
           : "Figma High-Fidelity & Prototype",
       points: [t("proc_2_p1"), t("proc_2_p2"), t("proc_2_p3")],
-      gradient: "from-[#15803d]/15 to-transparent",
-      accentBg: "bg-[#15803d]",
+      gradient: "from-[#C6F432]/10 to-transparent",
+      accentBg: "bg-[#C6F432]",
     },
     {
       step: "03",
@@ -60,8 +60,8 @@ export default function Process() {
           ? "Kode Bersih Next.js 16 & Integrasi API"
           : "Clean Next.js 16 & API Integration",
       points: [t("proc_3_p1"), t("proc_3_p2"), t("proc_3_p3")],
-      gradient: "from-[#15803d]/15 to-transparent",
-      accentBg: "bg-[#15803d]",
+      gradient: "from-[#C6F432]/10 to-transparent",
+      accentBg: "bg-[#C6F432]",
     },
     {
       step: "04",
@@ -73,8 +73,8 @@ export default function Process() {
           ? "Laporan QA & Skor Audit 95+ Vitals"
           : "QA Report & 95+ Core Web Vitals",
       points: [t("proc_4_p1"), t("proc_4_p2"), t("proc_4_p3")],
-      gradient: "from-[#15803d]/15 to-transparent",
-      accentBg: "bg-[#15803d]",
+      gradient: "from-[#C6F432]/10 to-transparent",
+      accentBg: "bg-[#C6F432]",
     },
     {
       step: "05",
@@ -86,8 +86,8 @@ export default function Process() {
           ? "Website Live di Domain & Terindeks SEO"
           : "Live Production Domain & SEO Indexed",
       points: [t("proc_5_p1"), t("proc_5_p2"), t("proc_5_p3")],
-      gradient: "from-[#15803d]/15 to-transparent",
-      accentBg: "bg-[#15803d]",
+      gradient: "from-[#C6F432]/10 to-transparent",
+      accentBg: "bg-[#C6F432]",
     },
     {
       step: "06",
@@ -99,8 +99,8 @@ export default function Process() {
           ? "Dukungan Teknis Prioritas & SLA 24/7"
           : "Priority Technical Support & 24/7 SLA",
       points: [t("proc_6_p1"), t("proc_6_p2"), t("proc_6_p3")],
-      gradient: "from-[#15803d]/15 to-transparent",
-      accentBg: "bg-[#15803d]",
+      gradient: "from-[#C6F432]/10 to-transparent",
+      accentBg: "bg-[#C6F432]",
     },
   ];
 
@@ -143,8 +143,8 @@ export default function Process() {
     }`}>
       {/* Background ambient lighting */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(21,128,61,0.12)_0%,transparent_70%)]" />
-        <div className="absolute bottom-1/4 right-10 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(21,128,61,0.12)_0%,transparent_70%)]" />
+        <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(198,244,50,0.06)_0%,transparent_70%)]" />
+        <div className="absolute bottom-1/4 right-10 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(198,244,50,0.06)_0%,transparent_70%)]" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
@@ -159,8 +159,8 @@ export default function Process() {
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 ${
                 isDark
-                  ? "bg-[#121214] border border-[#15803d]/40 text-[#16a34a] shadow-[0_0_15px_rgba(21,128,61,0.15)]"
-                  : "bg-green-50 border border-green-300 text-green-800"
+                  ? "bg-[#121214] border border-[#C6F432]/30 text-[#C6F432] shadow-[0_0_15px_rgba(198,244,50,0.1)]"
+                  : "bg-lime-50 border border-lime-300 text-lime-800"
               }`}
             >
               <Sparkles className="w-3.5 h-3.5" />
@@ -177,7 +177,7 @@ export default function Process() {
               }`}
             >
               {t("proc_title")}{" "}
-              <span className={`italic font-serif ${isDark ? "text-[#16a34a]" : "text-[#15803d]"}`}>
+              <span className={`italic font-serif ${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}`}>
                 {t("proc_title_highlight")}
               </span>
             </motion.h2>
@@ -207,8 +207,8 @@ export default function Process() {
                     className={`flex items-center gap-3 text-xs font-semibold px-2.5 py-1.5 rounded-xl transition-all duration-200 text-left cursor-pointer ${
                       isActive
                         ? isDark
-                          ? "bg-[#15803d]/20 text-[#16a34a] font-bold border border-[#15803d]/40 shadow-sm"
-                          : "bg-green-50 text-green-800 font-bold border border-green-300 shadow-sm"
+                          ? "bg-[#C6F432]/10 text-[#C6F432] font-bold border border-[#C6F432]/30 shadow-sm"
+                          : "bg-lime-50 text-lime-800 font-bold border border-lime-300 shadow-sm"
                         : isDark
                         ? "text-gray-400 hover:text-white hover:bg-white/5 border border-transparent"
                         : "text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-transparent"
@@ -217,7 +217,7 @@ export default function Process() {
                     <span
                       className={`w-5 h-5 rounded-md font-mono font-bold flex items-center justify-center text-[10px] transition-colors ${
                         isActive
-                          ? "bg-[#15803d] text-white shadow-sm"
+                          ? "bg-[#C6F432] text-[#0B0B0C] shadow-sm"
                           : isDark
                           ? "bg-white/10 text-gray-300"
                           : "bg-slate-200 text-slate-700"
@@ -230,7 +230,7 @@ export default function Process() {
                     <span
                       className={`font-medium text-[11px] shrink-0 ${
                         isActive
-                          ? isDark ? "text-[#16a34a] font-bold" : "text-green-800 font-bold"
+                          ? isDark ? "text-[#C6F432] font-bold" : "text-lime-800 font-bold"
                           : isDark ? "text-gray-500" : "text-slate-500"
                       }`}
                     >
@@ -247,7 +247,7 @@ export default function Process() {
                 ? "bg-[#121214] text-white border-white/10"
                 : "bg-white text-slate-900 border-slate-200/90 shadow-md"
             }`}>
-              <div className={`flex items-center gap-2 mb-1.5 ${isDark ? "text-[#16a34a]" : "text-green-700"}`}>
+              <div className={`flex items-center gap-2 mb-1.5 ${isDark ? "text-[#C6F432]" : "text-lime-700"}`}>
                 <Sparkles className="w-3.5 h-3.5" />
                 <span className="text-[11px] font-bold uppercase tracking-wider">
                   {language === "id" ? "Siap Memulai Proyek?" : "Ready to Build?"}
@@ -266,9 +266,9 @@ export default function Process() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl text-xs font-extrabold text-white bg-[#15803d] hover:bg-[#166534] shadow-md shadow-green-950/25 active:scale-95 transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl text-xs font-extrabold text-[#0B0B0C] bg-[#C6F432] hover:bg-[#b5e028] shadow-md shadow-[#C6F432]/25 active:scale-95 transition-all"
               >
-                <MessageCircle className="w-3.5 h-3.5 text-white" />
+                <MessageCircle className="w-3.5 h-3.5 text-[#0B0B0C]" />
                 <span>{language === "id" ? "Konsultasi Gratis Sekarang" : "Start Free Consultation"}</span>
               </a>
             </div>
@@ -297,8 +297,8 @@ export default function Process() {
                     }}
                     className={`group relative flex flex-col justify-between p-6 sm:p-7 rounded-3xl transition-all duration-200 transform-gpu overflow-hidden ${
                       isDark
-                        ? "bg-[#121214] border border-white/10 hover:border-[#15803d]/50 shadow-xl hover:shadow-[#15803d]/10"
-                        : "bg-white border border-slate-200/90 hover:border-green-600 shadow-md hover:shadow-xl"
+                        ? "bg-[#121214] border border-white/10 hover:border-[#C6F432]/40 shadow-xl hover:shadow-[#C6F432]/10"
+                        : "bg-white border border-slate-200/90 hover:border-lime-400 shadow-md hover:shadow-xl"
                     }`}
                   >
                     {/* Subtle top-right ambient tint on hover */}
@@ -324,15 +324,15 @@ export default function Process() {
                               ? "text-gray-400 bg-white/5 border border-white/10"
                               : "text-slate-600 bg-slate-100 border border-slate-200"
                           }`}>
-                            <Clock className="w-3 h-3 text-[#16a34a]" />
+                            <Clock className="w-3 h-3 text-[#C6F432]" />
                             <span>{process.duration}</span>
                           </span>
                         </div>
 
                         <span className={`font-mono text-2xl font-black transition-colors select-none ${
                           isDark
-                            ? "text-white/10 group-hover:text-[#16a34a]/30"
-                            : "text-slate-200 group-hover:text-green-600/30"
+                            ? "text-white/10 group-hover:text-[#C6F432]/30"
+                            : "text-slate-200 group-hover:text-lime-500/30"
                         }`}>
                           {process.step}
                         </span>
@@ -342,14 +342,14 @@ export default function Process() {
                       <div className="flex items-center gap-3.5 mb-5">
                         <div className={`w-11 h-11 shrink-0 rounded-2xl flex items-center justify-center transition-all duration-200 ${
                           isDark
-                            ? "bg-[#161618] border border-white/10 text-[#16a34a] group-hover:bg-[#15803d] group-hover:text-white"
-                            : "bg-green-50 border border-green-200 text-green-800 group-hover:bg-[#15803d] group-hover:text-white"
+                            ? "bg-[#161618] border border-white/10 text-[#C6F432] group-hover:bg-[#C6F432] group-hover:text-[#0B0B0C]"
+                            : "bg-lime-50 border border-lime-200 text-lime-800 group-hover:bg-[#C6F432] group-hover:text-[#0B0B0C]"
                         }`}>
                           <Icon className="w-5 h-5" />
                         </div>
                         <h3 className={`text-lg md:text-xl font-extrabold transition-colors tracking-tight leading-snug ${
                           isDark
-                            ? "text-white group-hover:text-[#16a34a]"
+                            ? "text-white group-hover:text-[#C6F432]"
                             : "text-slate-900 group-hover:text-black"
                         }`}>
                           {process.title}
@@ -365,7 +365,7 @@ export default function Process() {
                               isDark ? "text-gray-300" : "text-slate-600"
                             }`}
                           >
-                            <div className="w-4 h-4 rounded-full bg-[#15803d]/15 border border-[#15803d]/35 text-[#16a34a] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs group-hover:bg-[#15803d]/25 transition-colors">
+                            <div className="w-4 h-4 rounded-full bg-[#C6F432]/10 border border-[#C6F432]/25 text-[#C6F432] flex items-center justify-center shrink-0 mt-0.5 shadow-2xs group-hover:bg-[#C6F432]/20 transition-colors">
                               <CheckCheck className="w-2.5 h-2.5 stroke-[2.5]" />
                             </div>
                             <span className={isDark ? "group-hover:text-white transition-colors" : "group-hover:text-slate-900 transition-colors"}>
@@ -383,14 +383,14 @@ export default function Process() {
                         : "border-slate-200 bg-slate-50 text-slate-600"
                     }`}>
                       <div className="flex items-center gap-1.5 truncate pr-2">
-                        <Sparkles className="w-3.5 h-3.5 text-[#16a34a] shrink-0" />
+                        <Sparkles className="w-3.5 h-3.5 text-[#C6F432] shrink-0" />
                         <span className={`truncate ${isDark ? "text-gray-300" : "text-slate-700"}`}>
                           {process.deliverable}
                         </span>
                       </div>
                       <div className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 transition-colors shadow-2xs ${
                         isDark
-                          ? "bg-[#121214] border-white/10 text-gray-400 group-hover:text-[#16a34a]"
+                          ? "bg-[#121214] border-white/10 text-gray-400 group-hover:text-[#C6F432]"
                           : "bg-white border-slate-200 text-slate-600 group-hover:text-black"
                       }`}>
                         <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />

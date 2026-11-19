@@ -35,7 +35,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/landexafy-logo.webp?v=1" />
         <link rel="apple-touch-icon" href="/landexafy-logo.webp?v=1" />
       </head>
-      <body className="min-h-screen font-sans antialiased overflow-x-clip selection:bg-[#15803d] selection:text-white" suppressHydrationWarning>
+      <body className="min-h-screen font-sans antialiased overflow-x-clip selection:bg-[#C6F432] selection:text-[#0B0B0C]" suppressHydrationWarning>
         <LanguageWrapper>{children}</LanguageWrapper>
       </body>
     </html>

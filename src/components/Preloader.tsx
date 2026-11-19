@@ -54,8 +54,8 @@ export default function Preloader() {
               className="text-2xl sm:text-3xl font-black tracking-tight flex items-center select-none"
             >
               <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
-              <span className={isDark ? "text-[#16a34a]" : "text-[#15803d]"}>exafy</span>
-              <span className={isDark ? "text-[#16a34a]" : "text-[#15803d]"}>.</span>
+              <span className={isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}>exafy</span>
+              <span className="text-[#C6F432]">.</span>
             </motion.div>
 
             {/* Deliberate Minimalist Progress Line (Fills smoothly to 100%) */}
@@ -71,7 +71,9 @@ export default function Preloader() {
                   duration: 1.15,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="h-full w-full rounded-full origin-left bg-[#15803d]"
+                className={`h-full w-full rounded-full origin-left ${
+                  isDark ? "bg-[#C6F432]" : "bg-[#4d7c0f]"
+                }`}
               />
             </div>
           </div>
