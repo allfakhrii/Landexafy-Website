@@ -49,6 +49,7 @@ export default function Portfolio() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const [isMobile, setIsMobile] = useState(false);
+  const [openFolderId, setOpenFolderId] = useState<string | null>(null);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -61,6 +62,13 @@ export default function Portfolio() {
 
   // Carousel showcase items featuring live web projects
   const carouselItems = [
+    {
+      src: "/reefsight.webp",
+      alt: "ReefSight 3D Marine Ecosystem Platform",
+      title: "ReefSight",
+      subtitle: "3D Interactive Marine & Ocean Platform",
+      url: "https://reefsight.vercel.app",
+    },
     {
       src: "/personal-branding.webp",
       alt: "Al-Fakhri Portfolio Website",
@@ -305,6 +313,13 @@ export default function Portfolio() {
       badge: "Dashboard & SaaS",
       items: [
         {
+          title: "ReefSight",
+          tag: "3D Marine & Ocean Tech",
+          image: "/reefsight.webp",
+          url: "https://reefsight.vercel.app",
+          isUpcoming: false,
+        },
+        {
           title: "Finora Management",
           tag: "FinTech & Money App",
           image: "/finora.webp",
@@ -452,6 +467,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7 text-left max-w-md md:max-w-none mx-auto">
             {folderCategories.map((folder, fIndex) => {
               const IconComponent = folder.icon;
+              const isOpen = openFolderId === folder.id;
 
               const folderItems = folder.items.map((item) => {
                 if (item.isUpcoming) {
@@ -532,13 +548,26 @@ export default function Portfolio() {
                     ease: [0.22, 1, 0.36, 1],
                   }}
                   className={`flex flex-col items-center rounded-3xl p-4 sm:p-5 transition-all duration-300 relative group w-full border ${
+                    isOpen
+                      ? "z-40 ring-2 ring-[#C6F432]/70 shadow-2xl scale-[1.01]"
+                      : openFolderId !== null
+                      ? "z-10 opacity-60 hover:opacity-90 hover:z-20"
+                      : "z-10 hover:z-20"
+                  } ${
                     isDark
-                      ? "bg-[#121214] border-white/10 hover:border-[#C6F432]/40 hover:shadow-[0_0_30px_rgba(198,244,50,0.1)]"
+                      ? isOpen
+                        ? "bg-[#161618] border-[#C6F432]/60 shadow-[0_0_35px_rgba(198,244,50,0.18)]"
+                        : "bg-[#121214] border-white/10 hover:border-[#C6F432]/40 hover:shadow-[0_0_30px_rgba(198,244,50,0.1)]"
+                      : isOpen
+                      ? "bg-white border-lime-400 shadow-xl"
                       : "bg-[#F8FAFC] border-slate-200/90 shadow-sm hover:border-lime-400 hover:shadow-md"
                   }`}
                 >
                   {/* Folder Card Header */}
-                  <div className="w-full flex items-center justify-between mb-2 gap-1">
+                  <div
+                    onClick={() => setOpenFolderId(isOpen ? null : folder.id)}
+                    className="w-full flex items-center justify-between mb-2 gap-1 cursor-pointer select-none"
+                  >
                     <div className="flex items-center gap-2 min-w-0">
                       <div
                         className="w-7 h-7 rounded-lg flex items-center justify-center text-[#0B0B0C] bg-[#C6F432] shadow-xs shrink-0 font-bold"
@@ -562,7 +591,7 @@ export default function Portfolio() {
                   </div>
 
                   {/* 3D Interactive Folder Component */}
-                  <div className="relative w-full min-h-[210px] sm:min-h-[220px] flex items-center justify-center py-2 overflow-visible">
+                  <div className="relative w-full min-h-[220px] sm:min-h-[230px] flex items-center justify-center py-2 overflow-visible">
                     <Folder
                       label={folder.label}
                       color={folder.color}
@@ -571,6 +600,11 @@ export default function Portfolio() {
                       size={isMobile ? 0.72 : 0.88}
                       layout="spread"
                       openOn="click"
+                      open={isOpen}
+                      onOpenChange={(nextOpen) =>
+                        setOpenFolderId(nextOpen ? folder.id : null)
+                      }
+                      closeOnOutsideClick={true}
                       draggable={true}
                       zoomOnClick={true}
                       theme={isDark ? "dark" : "light"}
