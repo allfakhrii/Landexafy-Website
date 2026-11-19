@@ -33,12 +33,12 @@ export default function ContactCTA() {
           }`}
         >
           {/* Subtle Ambient Radial Glow */}
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(198,244,50,0.12)_0%,transparent_70%)] pointer-events-none" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(198,244,50,0.08)_0%,transparent_70%)] pointer-events-none" />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(21,128,61,0.22)_0%,transparent_70%)] pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(21,128,61,0.15)_0%,transparent_70%)] pointer-events-none" />
 
           <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
             {/* Badge */}
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-[#C6F432]/30 text-[#C6F432] text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur-md shadow-[0_0_15px_rgba(198,244,50,0.1)]">
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-[#15803d]/40 text-[#16a34a] text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur-md shadow-[0_0_15px_rgba(21,128,61,0.15)]">
               <Sparkles className="w-3.5 h-3.5" />
               <span>{t("contact_badge")}</span>
             </div>
@@ -46,7 +46,7 @@ export default function ContactCTA() {
             {/* Headline */}
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight text-white">
               {t("contact_title")}{" "}
-              <span className="text-[#C6F432] italic font-serif">
+              <span className="text-[#16a34a] italic font-serif">
                 {t("contact_title_highlight")}
               </span>
             </h2>
@@ -62,17 +62,17 @@ export default function ContactCTA() {
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-8 py-4 bg-[#C6F432] hover:bg-[#b5e028] text-[#0B0B0C] font-extrabold rounded-full shadow-[0_0_25px_rgba(198,244,50,0.35)] transition-all duration-300 flex items-center justify-center gap-2.5 active:scale-[0.98]"
+                className="w-full sm:w-auto px-8 py-4 bg-[#15803d] hover:bg-[#166534] text-white font-extrabold rounded-full shadow-[0_0_25px_rgba(21,128,61,0.45)] transition-all duration-300 flex items-center justify-center gap-2.5 active:scale-[0.98]"
               >
-                <MessageCircle className="w-5 h-5 text-[#0B0B0C] stroke-[2.5]" />
+                <MessageCircle className="w-5 h-5 text-white stroke-[2.5]" />
                 <span>{t("contact_btn_wa")}</span>
               </a>
 
               <a
                 href="mailto:landexafy@gmail.com"
-                className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-full border border-white/15 hover:border-[#C6F432]/40 transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md active:scale-[0.98]"
+                className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-full border border-white/15 hover:border-[#15803d]/50 transition-all duration-300 flex items-center justify-center gap-2.5 backdrop-blur-md active:scale-[0.98]"
               >
-                <Mail className="w-5 h-5 text-[#C6F432]" />
+                <Mail className="w-5 h-5 text-[#16a34a]" />
                 <span>{t("contact_btn_email")}</span>
               </a>
             </div>
@@ -80,15 +80,15 @@ export default function ContactCTA() {
             {/* Trust points */}
             <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full text-xs md:text-sm text-gray-400 font-medium">
               <div className="flex items-center justify-center gap-2">
-                <Clock className="w-4 h-4 text-[#C6F432] shrink-0" />
+                <Clock className="w-4 h-4 text-[#16a34a] shrink-0" />
                 <span>{t("contact_stat_1")}</span>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <Zap className="w-4 h-4 text-[#C6F432] shrink-0" />
+                <Zap className="w-4 h-4 text-[#16a34a] shrink-0" />
                 <span>{t("contact_stat_2")}</span>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#C6F432] shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#16a34a] shrink-0" />
                 <span>{t("contact_stat_3")}</span>
               </div>
             </div>

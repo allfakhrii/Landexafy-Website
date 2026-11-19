@@ -139,8 +139,8 @@ export default function Hero() {
       {/* Cyber Lime Vertical Ambient Light Beam (From reference design) */}
       <div className={`absolute inset-0 -z-10 pointer-events-none ${
         isDark
-          ? "bg-[radial-gradient(ellipse_70%_55%_at_50%_72%,rgba(198,244,50,0.18)_0%,rgba(198,244,50,0.05)_45%,transparent_75%)]"
-          : "bg-[radial-gradient(ellipse_70%_55%_at_50%_72%,rgba(198,244,50,0.32)_0%,rgba(198,244,50,0.1)_45%,transparent_75%)]"
+          ? "bg-[radial-gradient(ellipse_70%_55%_at_50%_72%,rgba(21,128,61,0.22)_0%,rgba(21,128,61,0.06)_45%,transparent_75%)]"
+          : "bg-[radial-gradient(ellipse_70%_55%_at_50%_72%,rgba(21,128,61,0.18)_0%,rgba(21,128,61,0.05)_45%,transparent_75%)]"
       }`} />
 
       {/* Dark/Light Vignette Overlay for edges */}
@@ -156,29 +156,29 @@ export default function Hero() {
       }`} />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 text-center flex flex-col items-center">
-        {/* Badge with Lime Green Accent */}
+        {/* Badge with Dark Green Accent */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6 md:mb-7 transform-gpu cursor-default ${
             isDark
-              ? "bg-[#121214] border border-[#C6F432]/30 text-white shadow-[0_0_15px_rgba(198,244,50,0.12)]"
-              : "bg-white border border-lime-300 text-slate-800 shadow-sm"
+              ? "bg-[#121214] border border-[#15803d]/40 text-white shadow-[0_0_15px_rgba(21,128,61,0.2)]"
+              : "bg-white border border-green-300 text-slate-800 shadow-sm"
           }`}
         >
-          <Sparkles className="w-4 h-4 text-[#C6F432]" />
+          <Sparkles className="w-4 h-4 text-[#16a34a]" />
           <DecryptedText
             text={t("hero_badge")}
             animateOn="view"
             speed={45}
             maxIterations={10}
             className={`text-sm font-semibold tracking-wide ${isDark ? "text-white" : "text-slate-800"}`}
-            encryptedClassName="text-sm font-semibold text-[#C6F432] tracking-wide"
+            encryptedClassName="text-sm font-semibold text-[#16a34a] tracking-wide"
           />
         </motion.div>
 
-        {/* Headline with Serif Italic Lime Accent */}
+        {/* Headline with Serif Italic Dark Green Accent */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -188,7 +188,7 @@ export default function Hero() {
           }`}
         >
           {t("hero_title_prefix")}
-          <span className={`italic font-serif ml-2.5 ${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}`}>
+          <span className={`italic font-serif ml-2.5 ${isDark ? "text-[#16a34a]" : "text-[#15803d]"}`}>
             Landexafy
           </span>
         </motion.h1>
@@ -223,8 +223,8 @@ export default function Hero() {
             }
             mainClassName={`px-3.5 py-1 font-semibold text-xs sm:text-sm rounded-full ${
               isDark
-                ? "bg-[#161618] border border-[#C6F432]/35 text-[#C6F432] shadow-[0_0_18px_rgba(198,244,50,0.15)]"
-                : "bg-white border border-lime-300 text-lime-800 shadow-sm"
+                ? "bg-[#161618] border border-[#15803d]/40 text-[#16a34a] shadow-[0_0_18px_rgba(21,128,61,0.2)]"
+                : "bg-white border border-green-300 text-green-800 shadow-sm"
             }`}
             staggerFrom="last"
             initial={{ y: "100%", opacity: 0 }}
@@ -249,7 +249,7 @@ export default function Hero() {
           {t("hero_description")}
         </motion.p>
 
-        {/* Action Buttons: Solid Lime Green Primary + Glass Secondary */}
+        {/* Action Buttons: Solid Dark Green Primary + Glass Secondary */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -258,17 +258,17 @@ export default function Hero() {
         >
           <MagneticButton
             href="#services"
-            className="w-full sm:w-auto px-8 py-3.5 bg-[#C6F432] hover:bg-[#b5e028] text-[#0B0B0C] font-extrabold rounded-full shadow-[0_0_25px_rgba(198,244,50,0.35)] transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer active:scale-[0.98]"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#15803d] hover:bg-[#166534] text-white font-extrabold rounded-full shadow-[0_0_25px_rgba(21,128,61,0.35)] transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer active:scale-[0.98]"
           >
             <span>{t("hero_btn_pricing")}</span>
-            <ArrowRight className="w-5 h-5 text-[#0B0B0C] group-hover:translate-x-1.5 transition-transform duration-200" />
+            <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-1.5 transition-transform duration-200" />
           </MagneticButton>
 
           <MagneticButton
             href="#contact"
             className={`w-full sm:w-auto px-8 py-3.5 font-semibold rounded-full transition-all duration-200 flex items-center justify-center cursor-pointer active:scale-[0.98] ${
               isDark
-                ? "bg-white/5 hover:bg-white/10 border border-white/15 hover:border-[#C6F432]/40 text-white"
+                ? "bg-white/5 hover:bg-white/10 border border-white/15 hover:border-[#15803d]/50 text-white"
                 : "bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 shadow-sm"
             }`}
           >

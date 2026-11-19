@@ -85,8 +85,8 @@ export default function Stats() {
             >
               <div className={`w-10 h-10 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-3 md:mb-6 mx-auto ${
                 isDark
-                  ? "bg-[#121214] border border-[#C6F432]/30 text-[#C6F432] shadow-[0_0_15px_rgba(198,244,50,0.15)]"
-                  : "bg-white border border-lime-300 text-lime-800 shadow-sm"
+                  ? "bg-[#121214] border border-[#15803d]/40 text-[#16a34a] shadow-[0_0_15px_rgba(21,128,61,0.15)]"
+                  : "bg-white border border-green-300 text-green-800 shadow-sm"
               }`}>
                 <div className="scale-75 md:scale-100">{stat.icon}</div>
               </div>

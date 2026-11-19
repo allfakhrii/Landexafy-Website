@@ -51,7 +51,7 @@ export default function FAQ() {
             }`}
           >
             {t("faq_title")}{" "}
-            <span className={`italic font-serif ${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}`}>
+            <span className={`italic font-serif ${isDark ? "text-[#16a34a]" : "text-[#15803d]"}`}>
               {t("faq_title_highlight")}
             </span>
           </motion.h2>
@@ -76,8 +76,8 @@ export default function FAQ() {
               transition={{ duration: 0.4, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
               className={`border rounded-2xl transition-all duration-200 overflow-hidden transform-gpu ${
                 isDark
-                  ? "border-white/10 bg-[#121214] hover:border-[#C6F432]/30"
-                  : "border-slate-200/90 bg-slate-50 hover:border-lime-400 hover:bg-slate-100/70"
+                  ? "border-white/10 bg-[#121214] hover:border-[#15803d]/40"
+                  : "border-slate-200/90 bg-slate-50 hover:border-green-600 hover:bg-slate-100/70"
               }`}
             >
               <button
@@ -88,7 +88,7 @@ export default function FAQ() {
                 <span className={`text-lg font-medium ${isDark ? "text-white" : "text-slate-900"}`}>{faq.question}</span>
                 <ChevronDown
                   className={`w-5 h-5 transition-transform duration-250 ${
-                    openIndex === index ? (isDark ? "text-[#C6F432] rotate-180" : "text-lime-700 rotate-180") : "text-gray-400"
+                    openIndex === index ? (isDark ? "text-[#16a34a] rotate-180" : "text-[#15803d] rotate-180") : "text-gray-400"
                   }`}
                 />
               </button>

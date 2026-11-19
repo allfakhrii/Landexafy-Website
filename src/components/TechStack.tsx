@@ -115,8 +115,8 @@ export default function TechStack() {
       <div className="container mx-auto px-6 mb-8 text-center">
         <span className={`text-xs font-bold tracking-widest uppercase px-3.5 py-1.5 rounded-full border ${
           isDark
-            ? "text-[#C6F432] bg-[#121214] border-[#C6F432]/30 shadow-[0_0_15px_rgba(198,244,50,0.1)]"
-            : "text-lime-800 bg-lime-50 border-lime-300"
+            ? "text-[#16a34a] bg-[#121214] border-[#15803d]/40 shadow-[0_0_15px_rgba(21,128,61,0.15)]"
+            : "text-green-800 bg-green-50 border-green-300"
         }`}>
           {t("tech_badge")}
         </span>

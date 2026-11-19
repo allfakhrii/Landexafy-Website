@@ -21,10 +21,10 @@ export default function Footer() {
             <Link href="/" className="inline-flex items-center mb-4 select-none">
               <div className="text-2xl font-black tracking-tighter flex items-center">
                 <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
-                <span className={`${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"} font-black`}>
+                <span className={`${isDark ? "text-[#16a34a]" : "text-[#15803d]"} font-black`}>
                   exafy
                 </span>
-                <span className="text-[#C6F432] font-black">.</span>
+                <span className={`${isDark ? "text-[#16a34a]" : "text-[#15803d]"} font-black`}>.</span>
               </div>
             </Link>
             <p className={`text-sm leading-relaxed mb-6 ${isDark ? "text-gray-400" : "text-slate-600"}`}>
@@ -35,7 +35,7 @@ export default function Footer() {
                 href="https://instagram.com/Landexafy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`transition-colors ${isDark ? "text-gray-400 hover:text-[#C6F432]" : "text-slate-600 hover:text-black"}`}
+                className={`transition-colors ${isDark ? "text-gray-400 hover:text-[#16a34a]" : "text-slate-600 hover:text-black"}`}
               >
                 Instagram: @Landexafy
               </a>
@@ -43,7 +43,7 @@ export default function Footer() {
                 href="https://x.com/Landexafy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`transition-colors ${isDark ? "text-gray-400 hover:text-[#C6F432]" : "text-slate-600 hover:text-black"}`}
+                className={`transition-colors ${isDark ? "text-gray-400 hover:text-[#16a34a]" : "text-slate-600 hover:text-black"}`}
               >
                 X: @Landexafy
               </a>
@@ -54,28 +54,28 @@ export default function Footer() {
           <div>
             <h4 className={`font-semibold mb-4 ${isDark ? "text-white" : "text-slate-900"}`}>{t("foot_services")}</h4>
             <ul className={`space-y-3 text-sm ${isDark ? "text-gray-400" : "text-slate-600"}`}>
-              <li><Link href="#services" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_1")}</Link></li>
-              <li><Link href="#services" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_2")}</Link></li>
-              <li><Link href="#services" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_3")}</Link></li>
-              <li><Link href="#services" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_4")}</Link></li>
+              <li><Link href="#services" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_1")}</Link></li>
+              <li><Link href="#services" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_2")}</Link></li>
+              <li><Link href="#services" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_3")}</Link></li>
+              <li><Link href="#services" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_serv_4")}</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className={`font-semibold mb-4 ${isDark ? "text-white" : "text-slate-900"}`}>{t("foot_company")}</h4>
             <ul className={`space-y-3 text-sm ${isDark ? "text-gray-400" : "text-slate-600"}`}>
-              <li><Link href="#features" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_1")}</Link></li>
-              <li><Link href="#portfolio" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_2")}</Link></li>
-              <li><Link href="#services" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_3")}</Link></li>
-              <li><Link href="#faq" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_4")}</Link></li>
+              <li><Link href="#features" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_1")}</Link></li>
+              <li><Link href="#portfolio" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_2")}</Link></li>
+              <li><Link href="#services" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_3")}</Link></li>
+              <li><Link href="#faq" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_comp_4")}</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className={`font-semibold mb-4 ${isDark ? "text-white" : "text-slate-900"}`}>{t("foot_contact")}</h4>
             <ul className={`space-y-3 text-sm ${isDark ? "text-gray-400" : "text-slate-600"}`}>
-              <li><a href="mailto:landexafy@gmail.com" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>landexafy@gmail.com</a></li>
-              <li><a href="https://wa.me/6283182368320" target="_blank" rel="noopener noreferrer" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>+62 831-8236-8320</a></li>
+              <li><a href="mailto:landexafy@gmail.com" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>landexafy@gmail.com</a></li>
+              <li><a href="https://wa.me/6283182368320" target="_blank" rel="noopener noreferrer" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>+62 831-8236-8320</a></li>
               <li>{language === "id" ? "Purbalingga, Jawa Tengah, Indonesia" : "Purbalingga, Central Java, Indonesia"}</li>
             </ul>
           </div>
@@ -88,8 +88,8 @@ export default function Footer() {
             &copy; {currentYear} LANDEXAFY. {t("foot_rights")}
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
-            <Link href="#" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_privacy")}</Link>
-            <Link href="#" className={isDark ? "hover:text-[#C6F432] transition-colors" : "hover:text-black transition-colors"}>{t("foot_terms")}</Link>
+            <Link href="#" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_privacy")}</Link>
+            <Link href="#" className={isDark ? "hover:text-[#16a34a] transition-colors" : "hover:text-black transition-colors"}>{t("foot_terms")}</Link>
           </div>
         </div>
       </div>
