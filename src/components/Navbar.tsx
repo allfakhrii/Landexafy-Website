@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight, ArrowRight, Globe, Sun, Moon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import landexafyLogo from "@/assets/landexafy-logo.png";
+import landexafyLogo from "@/assets/landexafy-logo.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -21,8 +21,7 @@ export default function Navbar() {
     { name: t("nav_process"), href: "#process", number: "02" },
     { name: t("nav_services"), href: "#services", number: "03" },
     { name: t("nav_portfolio"), href: "#portfolio", number: "04" },
-    { name: t("nav_team"), href: "#team", number: "05" },
-    { name: t("nav_faq"), href: "#faq", number: "06" },
+    { name: t("nav_faq"), href: "#faq", number: "05" },
   ];
 
   // Lock body scroll when mobile menu is open

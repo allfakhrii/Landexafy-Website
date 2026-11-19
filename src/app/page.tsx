@@ -7,7 +7,6 @@ import Features from "@/components/Features";
 import Process from "@/components/Process";
 import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
-import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import ContactCTA from "@/components/ContactCTA";
@@ -26,7 +25,6 @@ export default function Home() {
       <Process />
       <Portfolio />
       <Pricing />
-      <Team />
       <Testimonials />
       <FAQ />
       <ContactCTA />

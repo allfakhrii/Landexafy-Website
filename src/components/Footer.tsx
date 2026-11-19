@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import landexafyLogo from "@/assets/landexafy-logo.png";
+import landexafyLogo from "@/assets/landexafy-logo.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 

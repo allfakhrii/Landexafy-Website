@@ -129,7 +129,6 @@ export default function Hero() {
         muted
         playsInline
         preload="auto"
-        poster="/hero-poster.jpg"
         className={`absolute inset-0 w-full h-full object-cover -z-20 transform-gpu ${
           isDark ? "opacity-35 mix-blend-screen" : "opacity-20 mix-blend-multiply"
         }`}
