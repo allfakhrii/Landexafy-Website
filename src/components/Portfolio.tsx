@@ -84,13 +84,6 @@ export default function Portfolio() {
       url: "https://www.jpandco.id/",
     },
     {
-      src: "/tkd.webp",
-      alt: "Club Taekwondo Singo Barong Website",
-      title: "Taekwondo Singo Barong",
-      subtitle: "Club & Martial Arts Landing Page",
-      url: "https://singobarong.netlify.app/",
-    },
-    {
       src: "/ecotani.webp",
       alt: "Eco-Tani Precision Agriculture SaaS Platform",
       title: "Eco-Tani SaaS",
@@ -119,34 +112,6 @@ export default function Portfolio() {
       url: "https://landinggabut.vercel.app/",
     },
     {
-      src: "/gym.webp",
-      alt: "Privat Trainer Fitness Website",
-      title: "Privat Trainer",
-      subtitle: "Fitness Coaching & Personal Trainer Landing Page",
-      url: "https://olahroygaku.netlify.app/",
-    },
-    {
-      src: "/spj.webp",
-      alt: "SiPalingJasa Freelance Service Website",
-      title: "SiPalingJasa",
-      subtitle: "Digital Service & Freelance Platform",
-      url: "https://sipalingjasa.netlify.app/",
-    },
-    {
-      src: "/black.webp",
-      alt: "Black Man Exhaust Automotive Website",
-      title: "Black Man Exhaust",
-      subtitle: "Automotive Racing & Exhaust Specialist",
-      url: "https://black-man.netlify.app/",
-    },
-    {
-      src: "/tani.webp",
-      alt: "Website Kelompok Tani Cemara",
-      title: "Kt. Cemara",
-      subtitle: "Agriculture Community & UMKM Website",
-      url: "https://ktcemara.netlify.app/",
-    },
-    {
       src: "/finora.webp",
       alt: "Finora Money Management SaaS Platform",
       title: "Finora",
@@ -159,6 +124,13 @@ export default function Portfolio() {
       title: "Cycling Analytics",
       subtitle: "Athletic Performance & Telemetry Dashboard",
       url: "https://cycling-analytics-omega.vercel.app/",
+    },
+    {
+      src: "/marinne.webp",
+      alt: "Marine Intelligence System Dashboard",
+      title: "Marine Intelligence",
+      subtitle: "Maritime Analytics & Ocean Telemetry",
+      url: "https://kelautan.netlify.app",
     },
   ];
 
