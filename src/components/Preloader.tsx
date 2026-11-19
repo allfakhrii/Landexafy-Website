@@ -2,8 +2,6 @@
 
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
-import landexafyLogo from "@/assets/landexafy-logo.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -41,29 +39,12 @@ export default function Preloader() {
           }`}
         >
           <div className="flex flex-col items-center gap-4">
-            {/* Minimal Logo Mark */}
-            <motion.div
-              initial={{ scale: 0.85, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="w-11 h-11 relative"
-            >
-              <Image
-                src={landexafyLogo}
-                alt="Landexafy Logo"
-                width={48}
-                height={48}
-                className="w-full h-full object-contain"
-                priority
-              />
-            </motion.div>
-
             {/* Clean Wordmark */}
             <motion.div
               initial={{ opacity: 0, y: 4 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="text-2xl font-black tracking-tight flex items-center"
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+              className="text-2xl sm:text-3xl font-black tracking-tight flex items-center select-none"
             >
               <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
               <span className={isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"}>exafy</span>

@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight, ArrowRight, Globe, Sun, Moon } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-import landexafyLogo from "@/assets/landexafy-logo.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -70,17 +68,9 @@ export default function Navbar() {
             {/* Brand Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2.5 shrink-0 group"
+              className="flex items-center shrink-0 group select-none py-0.5"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Image
-                src={landexafyLogo}
-                alt="Landexafy Logo"
-                width={36}
-                height={36}
-                priority
-                className="w-8 h-8 object-contain shrink-0"
-              />
               <div className="text-xl md:text-2xl font-black tracking-tight whitespace-nowrap flex items-center">
                 <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
                 <span className={`${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"} font-black`}>
@@ -188,17 +178,9 @@ export default function Navbar() {
             }`}>
               <Link
                 href="/"
-                className="flex items-center gap-2.5"
+                className="flex items-center select-none"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Image
-                  src={landexafyLogo}
-                  alt="Landexafy Logo"
-                  width={36}
-                  height={36}
-                  priority
-                  className="w-8 h-8 object-contain shrink-0"
-                />
                 <div className={`text-xl font-black tracking-tight flex items-center ${
                   isDark ? "text-white" : "text-slate-900"
                 }`}>

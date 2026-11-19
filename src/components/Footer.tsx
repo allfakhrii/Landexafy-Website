@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import landexafyLogo from "@/assets/landexafy-logo.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 
@@ -20,8 +18,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2 mb-4">
-              <Image src={landexafyLogo} alt="Landexafy Logo" width={32} height={32} className="w-8 h-8 object-contain" />
+            <Link href="/" className="inline-flex items-center mb-4 select-none">
               <div className="text-2xl font-black tracking-tighter flex items-center">
                 <span className={isDark ? "text-white" : "text-slate-900"}>Land</span>
                 <span className={`${isDark ? "text-[#C6F432]" : "text-[#4d7c0f]"} font-black`}>
